@@ -12,7 +12,7 @@
 :root {
     /* font-size */
     --fs-xs: 14px;
-    --fs-s: 20px;
+    --fs-s: 16px;
     --fs-sm: 19px;
     --fs-md: 18px;
     --fs-lg: 36px;
@@ -134,11 +134,8 @@
 }
 
 .Utilitiescard:hover svg path {
-
-    fill: black !important;
-
+    stroke: black !important;
 }
-
 
 .card-elipse {
     background-color: var(--white) !important;
@@ -161,11 +158,20 @@
     right: 0;
 }
 
-/* nav */
+.circleline {
+    position: relative;
+}
 
-
-
-
+.circleline::before {
+    content: '';
+    position: absolute;
+    top: 14% !important;
+    left: 47px;
+    height: 81% !important;
+    width: 3px;
+    background-color: var(--light-yellow);
+    z-index: -1;
+}
 
 
 /* team */
@@ -357,7 +363,7 @@
 }
 
 .bg-header {
-    background-image: url(../src/assets/images/headerimg.png);
+    background-image: url(../src/assets/images/headimg.png);
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -709,17 +715,6 @@
 
 @media (min-width: 375px) {
 
-
-    .circleline {
-        position: absolute;
-        content: '';
-        height: 49%;
-        width: 3px;
-        background-color: var(--light-yellow);
-        left: 9%;
-        bottom: 4%;
-    }
-
     .btn-p {
         position: absolute !important;
         top: 5% !important;
@@ -736,6 +731,8 @@
     .pt-sm-70 {
         padding-top: 70px !important;
     }
+
+
 
 
 
@@ -787,13 +784,7 @@
         top: 30%;
         right: 25%
     }
-
-
-
-
-
 }
-
 
 @media (min-width:576px) {
     :root {
@@ -836,34 +827,20 @@
 
     }
 
-    .circleline {
-        position: absolute;
-        content: '';
-        height: 34%;
-        width: 3px;
+
+    .circleline:before {
         background-color: var(--light-yellow);
-        /* rotate: 90deg; */
-        left: 5%;
-        bottom: 4%;
+        content: "";
+        height: 81% !important;
+        position: absolute;
+        top: 17% !important;
+        width: 3px;
+        z-index: -1;
+        left: 45px !important;
     }
-
-
 }
 
-@media (min-width:768px) {
-    .circleline {
-        position: absolute;
-        content: '';
-        height: 31%;
-        width: 3px;
-        background-color: var(--light-yellow);
-        /* rotate: 90deg; */
-        left: 5%;
-        bottom: 4%;
-    }
-
-}
-
+@media (min-width:768px) {}
 
 @media (min-width:992px) {
     .max-w-540 {
@@ -890,13 +867,6 @@
         padding-top: 120px;
     }
 
-}
-
-@media (min-width:1200px) {
-    .ml-xl-65 {
-        margin-left: 65px;
-    }
-
     .Utilitiescard {
         border-radius: 16px !important;
         border: 1px solid rgba(255, 255, 255, 0.20) !important;
@@ -907,5 +877,14 @@
         transition: 300ms linear;
 
     }
+
+}
+
+@media (min-width:1200px) {
+    .ml-xl-65 {
+        margin-left: 65px;
+    }
+
+
 
 }

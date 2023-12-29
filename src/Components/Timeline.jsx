@@ -83,18 +83,18 @@ function Timeline() {
                                     <p className='fs-s lh-109 color-black ff-Montserrat fw-bolderr mb-0 '>100%</p>
                                 </div>
                             </>
-                            <div className='ps-xl-5'>
+                            <div>
                                 <h2 className='ff-SansUber text-white fs-s fw-normal lh-109'>Phase 5</h2>
                                 <p className='fs-xs ff-Montserrat fw-normal text-white lh-160 max-w-565'>Faucibus congue risus nisl dictum. A, viverra malesuada nunc varius. Ut dignissim mauris eu sed nisl neque. </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='position-relative '>
-                    <Row className='d-lg-none d-block position-relative z-1 '>
-                        <Col lg={6}>
-                            <img src={timemonk} alt="monkey" className='w_100 ' />
-                        </Col>
+                <Row className='d-lg-none d-block position-relative z-1 '>
+                    <Col lg={6}>
+                        <img src={timemonk} alt="monkey" className='w_100 ' />
+                    </Col>
+                    <div className='circleline z-1'>
                         <Col lg={6} className='pt-5' >
                             <div className='d-flex align-items-center gap-3 pt-4 '>
 
@@ -157,14 +157,14 @@ function Timeline() {
                                 </div>
                             </div>
                         </Col>
-                    </Row>
-                    <div className='circleline'></div>
-                </div>
-                <div className='d-flex justify-content-center pt-lg-120'>
-                    <button className='fs-xs fw-normal color-black btn-1  ff-SansUber mt-5 border-0'> Read Our Whitepaper</button>
-                </div>
+                    </div>
+                </Row>
+            </div>
+            <div className='d-flex justify-content-center pt-lg-120'>
+                <button className='fs-xs fw-normal color-black btn-1  ff-SansUber mt-5 border-0'> Read Our Whitepaper</button>
             </div>
         </div>
+       
     )
 }
 

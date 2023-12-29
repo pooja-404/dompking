@@ -53,6 +53,7 @@ const Section4 = () => {
                                     <p className="ff-Montserrat fw-bolderr text-white fs-lg lh-109 pt-4">
                                         Max 2
                                     </p>
+
                                     <p className="fs-xs ff-Montserrat fw-normal text-white lh-160">
                                         Transaction per wallet
                                     </p>
@@ -66,8 +67,8 @@ const Section4 = () => {
                                     -
                                 </Button>
                                 <div className="count-btn d-flex align-items-center justify-content-center">
-                                    <p className=" mx-auto text-white lh-109 d-flex  text-center mb-0  fw-bolderr">
-                                        {" "}
+                                    <p className=" mx-auto text-white lh-109 d-flex fs-lg  text-center mb-0  fw-bolderr">
+                                        {" "}<span id='addzero'>0</span>
                                         {count}
                                     </p>
                                 </div>

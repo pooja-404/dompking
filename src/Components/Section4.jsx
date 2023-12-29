@@ -79,7 +79,7 @@ const Section4 = () => {
             <div className='fuild-container pt-5  position-relative overflow-hidden pb-lg-370 d-lg-block d-none  z-1'>
                 <div className='d-flex align-items-center justify-content-center flex-column' >
                     <h3 className='fs-xl fw-normal lh-108 text-white ff-SansUber '>THE KONGS</h3>
-                    <img src={domking} alt="thekongs" className='pt-3 position relative z-1' />
+                    <img src={domking} alt="thekongs" className='pt-3 position relative ' />
                 </div>
                 <img src={monkey1} alt="monkey" className='kong1' />
                 <img src={monkey2} alt="monkey" className='kong2' />
@@ -93,7 +93,7 @@ const Section4 = () => {
                 <img src={lastmonkey} alt="monkey" className='kong10' />
                 <div className='yellow-ellipse'></div>
             </div>
-            <div className='custom-container pt-5  pb-370 d-lg-none d-block  z-1'>
+            <div className='custom-container pt-5  pb-370 d-lg-none d-block z-1'>
                 <div className='d-flex align-items-center justify-content-center flex-column' >
                     <h3 className='fs-xl fw-normal lh-108 text-white ff-SansUber text-nowrap pt-5'>THE KONGS</h3>
                 </div>
