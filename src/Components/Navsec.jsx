@@ -3,8 +3,40 @@ import logo from '../assets/images/logo.png'
 import { Container } from 'react-bootstrap'
 
 const Navsec = () => {
+  const [backTop, setBackTop] = React.useState(false);
+
+  const moveToTop = () => {
+    document.documentElement.scrollTop = 0;
+  };
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 100) {
+      setBackTop(true);
+    } else {
+      setBackTop(false);
+    };
+
+
+  });
+
   return (
-    <div className='  position-relative'>
+
+    <div>
+      {
+        backTop ? (
+          <button
+            onClick={moveToTop}
+            className="position-fixed border-0 backtotop btn-top bottom-0 end-0 me-2 mb-2 rounded-circle pointer z-2"
+          >
+            <svg width="59" height="60" viewBox="0 0 59 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1401 17.5167L16.2798 19.0333H29H41.7202L41.8599 17.5167L42 16H29H16L16.1401 17.5167ZM23.737 27.8025L18.7069 33.0767L19.754 34.1053C20.3293 34.6704 20.9238 35.1333 21.0747 35.1333C21.2251 35.1333 22.6685 33.7599 24.2815 32.0818L27.2147 29.0298V36.5151V44H28.7768H30.339V36.7667C30.339 32.7883 30.4845 29.5333 30.6625 29.5333C30.8406 29.5333 32.3068 30.9039 33.9211 32.5788L36.8566 35.6243L37.9309 34.4287L39.0052 33.2326L33.8863 27.8804L28.767 22.5282L23.737 27.8025Z" fill="black" />
+            </svg>
+
+
+          </button>
+        ) : (
+          ""
+        )
+      }
       <header className='bg-header min-vh-100'>
         <div className=' custom-container position-relative'>
           <div className='d-flex align-items-center justify-content-center flex-column pt-2'>

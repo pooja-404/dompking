@@ -66,7 +66,7 @@ const Section4 = () => {
                 }
             },
             {
-                breakpoint: 400,
+                breakpoint: 350,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -120,7 +120,7 @@ const Section4 = () => {
                 <img src={domking} alt="thekongs" className=' w-100 pb-5' />
                 <Slider {...settings} className='mt-5'>
                     <div className=' mx-2 mt-5'>
-                        <img src={monkey9} alt="monkey" />
+                        <img src={monkey4} alt="monkey" />
                     </div>
                     <div className=' mx-2 mt-5'>
                         <img src={monkey7} alt="monkey" />
@@ -129,7 +129,7 @@ const Section4 = () => {
                         <img src={monkey8} alt="monkey" />
                     </div>
                     <div className=' mx-2 mt-5 '>
-                        <img src={monkey9} alt="monkey" className='mon' />
+                        <img src={monkey4} alt="monkey" />
                     </div>
                     <div className=' mx-2 mt-5'>
                         <img src={monkey7} alt="monkey" />
