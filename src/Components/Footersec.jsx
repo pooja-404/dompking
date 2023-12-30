@@ -12,7 +12,7 @@ function Footersec() {
                         FAQs
                     </p>
                     <Accordion defaultActiveKey="0">
-                        <Accordion.Item eventKey="0" >
+                        <Accordion.Item eventKey="0"  >
                             <Accordion.Header className="text-white fs-sm ff-montserrat fw-bold pl-0">
                                 Arcu faucibus diam feugiat magna etiam.
                             </Accordion.Header>
