@@ -456,7 +456,7 @@
 
 .accordion-item::before {
     content: '' ;
-    position: absolute !important;
+    position: absolute ;
     bottom: 0% !important;
     left: 0 !important;
     width: 100% !important;
