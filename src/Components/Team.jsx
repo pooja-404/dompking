@@ -10,7 +10,7 @@ function Team() {
             <div className='pt-5 custom-container'>
                 <h2 className='ff-SansUber fw-normal fs-xl lh-109 text-white text-center'>Meet The Team</h2>
                 <div className='position-relative  '>
-                    <Row className='yellowline pt-5'>
+                    <Row className='yellowline justify-content-center pt-5'>
                         <Col lg={6} className='pt-4 text-c-center'>
                             <p className='ff-Montserrat fw-bold lh-109 text-white fs-md'>Jaylon Schleifer</p>
                             <p className='ff-Montserrat fw-normal lh-109 text-white fs-s'>Carter Septimus</p>
@@ -39,7 +39,7 @@ function Team() {
                     </Row>
                 </div>
                 <div className='position-relative '>
-                    <Row className='yellowline pt-5 '>
+                    <Row className='yellowline  justify-content-center pt-5 '>
                         <Col lg={6} className='pt-4 text-c-center'>
                             <p className='ff-Montserrat fw-bold lh-109 text-white fs-md'>Talan Passaquindici Arcand</p>
                             <p className='ff-Montserrat fw-normal lh-109 text-white fs-s'>Jakob Ekstrom Bothman</p>
@@ -68,7 +68,7 @@ function Team() {
                     </Row>
                 </div>
                 <div className='position-relative '>
-                    <Row className='yellowline pt-5 '>
+                    <Row className='justify-content-center text-c-center pt-5 '>
                         <Col lg={6} className='pt-4 text-c-center'>
                             <p className='ff-Montserrat fw-bold lh-109 text-white fs-md '>Alfonso Franci</p>
                             <p className='ff-Montserrat fw-normal lh-109 text-white fs-s'>Alfonso Dokidis</p>

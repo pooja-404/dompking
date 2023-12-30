@@ -364,7 +364,7 @@
 }
 
 .bg-header {
-    background-image: url(../src/assets/images/headimg.png);
+    background-image: url(../src/assets/images/headerimg.png);
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -769,7 +769,7 @@
 
 }
 
-@media (max-width:576px) {
+@media (max-width:370px) {
     .ww-100 {
         width: 100%;
     }
@@ -777,11 +777,6 @@
     .pt-sm-70 {
         padding-top: 70px !important;
     }
-
-
-
-
-
 }
 
 @media (min-width:320px) {
