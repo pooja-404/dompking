@@ -7,7 +7,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 function Team() {
     return (
         <div className='light-black pb-3 pt-5'>
-            <div className='pt-5 custom-container'>
+            <div className='pt-lg-5 custom-container'>
                 <h2 className='ff-SansUber fw-normal fs-xl lh-109 text-white text-center'>Meet The Team</h2>
                 <div className='position-relative  '>
                     <Row className='yellowline justify-content-center pt-5'>
@@ -68,7 +68,7 @@ function Team() {
                     </Row>
                 </div>
                 <div className='position-relative '>
-                    <Row className='justify-content-center yellowline text-c-center pt-5 '>
+                    <Row className='justify-content-center yellowline text-c-center pt-r '>
                         <Col lg={6} className='pt-4 text-c-center'>
                             <p className='ff-Montserrat fw-bold lh-109 text-white fs-md '>Alfonso Franci</p>
                             <p className='ff-Montserrat fw-normal lh-109 text-white fs-s'>Alfonso Dokidis</p>

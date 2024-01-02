@@ -36,7 +36,7 @@ const Slidersection = () => {
             {
                 breakpoint: 1124,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 2.5,
                     slidesToScroll: 1,
                 }
             },

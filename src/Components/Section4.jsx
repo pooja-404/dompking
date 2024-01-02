@@ -30,7 +30,7 @@ const Section4 = () => {
             {
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true
@@ -39,21 +39,21 @@ const Section4 = () => {
             {
                 breakpoint: 1124,
                 settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 968,
+                breakpoint: 590,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                 }
 
@@ -61,14 +61,14 @@ const Section4 = () => {
             {
                   breakpoint: 500,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 350,
+                breakpoint: 420,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 }
             }
@@ -100,19 +100,19 @@ const Section4 = () => {
 
                 <Slider {...settings}>
                     <div className=' mx-2 mt-5'>
-                        <img src={monkey4} alt="monkey" />
+                        <img src={monkey4} alt="monkey " className='width' />
                     </div>
                     <div className=' mx-2 mt-5'>
-                        <img src={monkey2} alt="monkey" />
+                        <img src={monkey2} alt="monkey " className='width' />
                     </div>
                     <div className=' mx-2 mt-5'>
-                        <img src={monkey3} alt="monkey" />
+                        <img src={monkey3} alt="monkey" className='width' />
                     </div>
                     <div className=' mx-3 mt-5'>
-                        <img src={monkey4} alt="monkey" />
+                        <img src={monkey4} alt="monkey "  className='width'/>
                     </div>
                     <div className=' mx-3 mt-5'>
-                        <img src={monkey2} alt="monkey" />
+                        <img src={monkey2} alt="monkey" className='width'/>
                     </div>
 
                 </Slider >
@@ -120,19 +120,19 @@ const Section4 = () => {
                 <img src={domking} alt="thekongs" className=' w-100 pb-5' />
                 <Slider {...settings} className='mt-5'>
                     <div className=' mx-2 mt-5'>
-                        <img src={monkey4} alt="monkey" />
+                        <img src={monkey4} alt="monkey " className='width' />
                     </div>
                     <div className=' mx-2 mt-5'>
-                        <img src={monkey7} alt="monkey" />
+                        <img src={monkey7} alt="monkey " className='width' />
                     </div>
                     <div className=' mx-2 mt-5'>
-                        <img src={monkey8} alt="monkey" />
+                        <img src={monkey8} alt="monkey " className='width' />
                     </div>
                     <div className=' mx-2 mt-5 '>
-                        <img src={monkey4} alt="monkey" />
+                        <img src={monkey4} alt="monkey " className='width' />
                     </div>
                     <div className=' mx-2 mt-5'>
-                        <img src={monkey7} alt="monkey" />
+                        <img src={monkey7} alt="monkey " className='width' />
                     </div>
 
                 </Slider >

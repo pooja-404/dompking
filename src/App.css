@@ -218,21 +218,21 @@
 .kong2 {
     position: absolute;
     top: 20%;
-    left: 5%;
+    left: 0;
     box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
 }
 
 .kong3 {
     position: absolute;
     top: 39%;
-    left: 12%;
+    left: 0;
     box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
 }
 
 .kong4 {
     position: absolute;
     top: 57%;
-    left: 5%;
+    left: 0;
     box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
 }
 
@@ -252,19 +252,19 @@
 .kong7 {
     position: absolute;
     top: 20%;
-    right: 5%;
+    right: 0;
 }
 
 .kong8 {
     position: absolute;
     top: 39%;
-    right: 12%;
+    right: 0;
 }
 
 .kong9 {
     position: absolute;
     top: 57%;
-    right: 5%;
+    right: 0;
     border-radius: 8px;
     border: 4px solid #FDDA60;
 }
@@ -385,6 +385,21 @@
     height: 65px;
 }
 
+.mint-btn {
+    border-radius: 4px;
+    background: #fdda60;
+    box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.5);
+    padding: 16px 17px 16px 27px;
+    border: none;
+    font-size: var(--fs-md) !important;
+    font-weight: 400 !important;
+    font-family: var(--ff-SansUber) !important;
+    line-height: 109% !important;
+    color: var(--color-black) !important;
+    width: 92%;
+    transition: 300ms linear;
+}
+
 .small-btn {
     border-radius: 4px;
     background: #fff !important;
@@ -399,7 +414,47 @@
 
 }
 
+.count {
+    font-size: var(--fs-lg) !important;
+    font-weight: 900 !important;
+    font-family: var(--ff-Montserrat) !important;
+    line-height: 109% !important;
+    color: var(--white) !important;
+}
+
 .btn-1:hover {
+    background-color: var(--white);
+    box-shadow: 0px 4px 16px 0px rgba(253, 218, 96, 0.50);
+    padding-right: 24px;
+    padding-left: 8px;
+
+}
+
+.btn-1:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.btn-1 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-1:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+
+
+
+.mint-btn:hover {
     background-color: var(--white);
     box-shadow: 0px 4px 16px 0px rgba(253, 218, 96, 0.50);
 
@@ -408,7 +463,30 @@
 .mint-btn:hover {
     background-color: var(--white);
     box-shadow: 0px 4px 16px 0px rgba(253, 218, 96, 0.50);
+    padding-right: 24px;
+    padding-left: 8px;
 
+}
+
+.mint-btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.mint-btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.mint-btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .gold-ellipse {
@@ -426,6 +504,92 @@
 .fw-bolderr {
     font-weight: 900;
 
+}
+
+.light1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: light1 5s forwards;
+
+}
+
+@keyframes light1 {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+.light2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: light2 5s forwards;
+}
+
+@keyframes light2 {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+.monkey1 {
+    position: absolute;
+    bottom: 0;
+    right: 27%;
+    animation: monkey1 5s forwards;
+}
+
+@keyframes monkey1 {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 27%;
+    }
+}
+
+.monkey2 {
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    animation: monkey2 5s forwards;
+}
+
+@keyframes monkey2 {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 8%;
+    }
+}
+
+.monkey3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: monkey3 5s forwards;
+}
+
+@keyframes monkey3 {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0;
+    }
 }
 
 
@@ -455,8 +619,8 @@
 }
 
 .accordion-item::before {
-    content: '' ;
-    position: absolute ;
+    content: '';
+    position: absolute;
     bottom: 0% !important;
     left: 0 !important;
     width: 100% !important;
@@ -601,16 +765,12 @@
     top: -28%;
 }
 
-.timeline1 {
-    position: absolute;
-    left: 32%;
-    top: 2%;
-}
+
 
 .timeline2 {
     position: absolute;
     left: 38%;
-    top: 32%;
+    top: 35%;
 }
 
 .timeline3 {
@@ -619,11 +779,6 @@
     top: 71%;
 }
 
-.timeline4 {
-    position: absolute;
-    left: 27%;
-    bottom: -31%;
-}
 
 .small-circle {
     width: 76px;
@@ -645,7 +800,7 @@
 .yellow-circle2 {
     position: absolute;
     left: 300px;
-    top: 11%;
+    top: 14%;
     filter: drop-shadow(0px 4px 21px rgba(253, 218, 96, 0.70));
 }
 
@@ -666,8 +821,8 @@
 
 .yellow-circle5 {
     position: absolute;
-    left: 235px;
-    bottom: -19%;
+    left: 212px;
+    bottom: -25%;
     filter: drop-shadow(0px 4px 21px rgba(253, 218, 96, 0.70));
 }
 
@@ -693,6 +848,10 @@
 
 .pb-90 {
     padding-bottom: 180px;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
 }
 
 .mon {
@@ -754,7 +913,34 @@
 
     .w_100 {
         width: 100%;
+    }
 
+    .count-btn {
+        border-radius: 4px;
+        border: 2px solid #fff;
+        width: 100%;
+        height: 65px;
+    }
+
+
+    .mint-btn {
+        border-radius: 4px;
+        background: #fdda60;
+        box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.5);
+        padding: 16px 17px 16px 18px;
+        border: none;
+        font-size: var(--fs-md) !important;
+        font-weight: 400 !important;
+        font-family: var(--ff-SansUber) !important;
+        line-height: 109% !important;
+        color: var(--color-black) !important;
+        width: 100%;
+        transition: 300ms linear;
+    }
+
+    .width {
+        width: 75%;
+        height: 75%;
     }
 }
 
@@ -777,6 +963,23 @@
     .pt-sm-70 {
         padding-top: 70px !important;
     }
+
+
+    /* 
+    .mint-btn {
+        border-radius: 4px;
+        background: #fdda60;
+        box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.5);
+        padding: 16px 17px 16px 27px;
+        border: none;
+        font-size: var(--fs-md) !important;
+        font-weight: 400 !important;
+        font-family: var(--ff-SansUber) !important;
+        line-height: 109% !important;
+        color: var(--color-black) !important;
+        width: 100%;
+        transition: 300ms linear;
+    } */
 }
 
 @media (min-width:320px) {
@@ -789,23 +992,6 @@
 
 
     }
-
-    .mint-btn {
-        border-radius: 4px;
-        background: #fdda60;
-        box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.5);
-        padding: 16px 17px 16px 18px;
-        border: none;
-        font-size: var(--fs-md) !important;
-        font-weight: 400 !important;
-        font-family: var(--ff-SansUber) !important;
-        line-height: 109% !important;
-        color: var(--color-black) !important;
-        width: 100%;
-        transition: 300ms linear;
-    }
-
-
 
     .btn-1 {
         display: inline-flex;
@@ -826,23 +1012,6 @@
         top: 30%;
         right: 25%
     }
-}
-
-@media (min-width:576px) {
-    .mint-btn {
-        border-radius: 4px;
-        background: #fdda60;
-        box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.5);
-        padding: 16px 17px 16px 18px;
-        border: none;
-        font-size: var(--fs-md) !important;
-        font-weight: 400 !important;
-        font-family: var(--ff-SansUber) !important;
-        line-height: 109% !important;
-        color: var(--color-black) !important;
-        width: 94%;
-        transition: 300ms linear;
-    }
 
 }
 
@@ -856,6 +1025,7 @@
         --fs-lg: 36px;
         --fs-xl: 64px;
     }
+
     .btn-1 {
         display: inline-flex;
         padding: 16px 24px;
@@ -869,21 +1039,6 @@
         text-transform: uppercase;
     }
 
-    .mint-btn {
-        border-radius: 4px;
-        background: #fdda60;
-        box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.5);
-        padding: 16px 179px 16px 180px;
-        border: none;
-        font-size: var(--fs-md) !important;
-        font-weight: 400 !important;
-        font-family: var(--ff-SansUber) !important;
-        line-height: 109% !important;
-        color: var(--color-black) !important;
-        width: unset;
-
-    }
-
 
     .circleline:before {
         background-color: var(--light-yellow);
@@ -894,6 +1049,18 @@
         width: 3px;
         z-index: -1;
         left: 45px !important;
+    }
+
+    .timeline1 {
+        position: absolute;
+        left: 32%;
+        top: 3% !important;
+    }
+
+    .timeline4 {
+        position: absolute !important;
+        left: 27% !important;
+        bottom: -41% !important;
     }
 }
 
@@ -933,11 +1100,94 @@
 
     }
 
+    .timeline4 {
+        position: absolute;
+        left: 27%;
+        bottom: -39% !important;
+    }
+
+    .timeline1 {
+        position: absolute;
+        left: 32%;
+        top: 4% !important;
+    }
+
+    .btn-width {
+        width: 92%;
+    }
 }
 
 @media (min-width:1200px) {
     .ml-xl-65 {
         margin-left: 65px;
+    }
+
+    .kong1 {
+        position: absolute;
+        top: 2%;
+        left: 0;
+        box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
+    }
+
+    .kong2 {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
+    }
+
+    .kong3 {
+        position: absolute;
+        top: 39%;
+        left: 12%;
+        box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
+    }
+
+    .kong4 {
+        position: absolute;
+        top: 57%;
+        left: 5%;
+        box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
+    }
+
+    .kong5 {
+        position: absolute;
+        top: 76%;
+        left: 0;
+        box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
+    }
+
+    .kong6 {
+        position: absolute;
+        top: 2%;
+        right: 0;
+    }
+
+    .kong7 {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+    }
+
+    .kong8 {
+        position: absolute;
+        top: 39%;
+        right: 12%;
+    }
+
+    .kong9 {
+        position: absolute;
+        top: 57%;
+        right: 5%;
+        border-radius: 8px;
+        border: 4px solid #FDDA60;
+    }
+
+    .kong10 {
+        position: absolute;
+        top: 76%;
+        right: 0;
+        box-shadow: 1px 1px 17px 2px rgba(219, 171, 13, 0.62);
     }
 
 

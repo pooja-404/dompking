@@ -4,13 +4,16 @@ import wiski from '../assets/images/wiski.png'
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 const Section4 = () => {
-    let [count, setCount] = useState(1);
-
-    function incrementCount() {
-        setCount((prevCount) => (prevCount < 100 ? prevCount + 1 : prevCount));
+    const [count, setCount] = useState(1);
+    const decrement = () => {
+        if (count >= 1) {
+            setCount(count - 1);
+        }
     }
-    function decrementCount() {
-        setCount((prevCount) => (prevCount > 1 ? prevCount - 1 : 1));
+    if (count == 10) {
+        document.getElementById("addzero").style.display = "none"
+    } else if (count == 9) {
+        document.getElementById("addzero").style.display = "block"
     }
     return (
         <>
@@ -20,7 +23,7 @@ const Section4 = () => {
                         <Col lg={6} className="pt-4 pt-lg-0 text-c-center">
                             <img src={wiski} alt="wiski" className="ww-100" />
                         </Col>
-                        <Col lg={6} className="pt-4 pt-lg-0 text-c-center">
+                        <Col lg={6} className="pt-5 pt-lg-0 text-c-center">
                             <p className="text-white fs-xl lh-109 fw-normal ff-SansUber pb-5">
                                 Mint NFT
                             </p>
@@ -59,22 +62,17 @@ const Section4 = () => {
                                     </p>
                                 </Col>
                             </Row>
-                            <div className="d-flex align-items-center iconn gap-3 mt-5">
-                                <Button
-                                    onClick={decrementCount}
-                                    className="small-btn"
-                                >
-                                    -
-                                </Button>
+                            <div className="d-flex align-items-center iconn gap-3 mt-5 btn-width">
+                                <Button className="small-btn color-black ff-montserrat fw-extrabold lh-109 fs-lg p-0  d-flex align-items-center justify-content-center iconn gap-3 mt - 5" onClick={decrement}>-</Button>
                                 <div className="count-btn d-flex align-items-center justify-content-center">
-                                    <p className=" mx-auto text-white lh-109 d-flex fs-lg  text-center mb-0  fw-bolderr">
-                                        {" "}<span id='addzero'>0</span>
+                                    <p className=" count  lh-109 text-center mb-0 fw-extrabold  fs-lg  text-white ff-montserrat fw-extrabold d-flex align-items-center  justify-content-center">
+                                        {" "}<span id='addzero' className="count ">0</span>
                                         {count}
                                     </p>
                                 </div>
                                 <Button
-                                    onClick={incrementCount}
-                                    className="small-btn"
+                                    onClick={() => setCount(count + 1)}
+                                    className="small-btn color-black p-0 ff-montserrat fw-extrabold lh-109 fs-lg  d-flex align-items-center justify-content-center iconn gap-3 mt - 5"
                                 >
                                     +
                                 </Button>
@@ -87,7 +85,7 @@ const Section4 = () => {
                 <div className="yellow-ellipse2 d-lg-block d-none"></div>
             </div>
         </>
-    );
+    ); 
 };
 
 export default Section4;
