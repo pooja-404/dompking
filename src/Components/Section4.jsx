@@ -117,7 +117,7 @@ const Section4 = () => {
 
                 </Slider >
 
-                <img src={domking} alt="thekongs" className=' w-100 pb-5' />
+                <img src={domking} alt="thekongs" className=' w-100 ' />
                 <Slider {...settings} className='mt-5'>
                     <div className=' mx-2 mt-5'>
                         <img src={monkey4} alt="monkey " className='width' />
