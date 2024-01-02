@@ -68,7 +68,7 @@ function Team() {
                     </Row>
                 </div>
                 <div className='position-relative '>
-                    <Row className='justify-content-center yellowline text-c-center pt-r '>
+                    <Row className='justify-content-center yellowline text-c-center pt-5 '>
                         <Col lg={6} className='pt-4 text-c-center'>
                             <p className='ff-Montserrat fw-bold lh-109 text-white fs-md '>Alfonso Franci</p>
                             <p className='ff-Montserrat fw-normal lh-109 text-white fs-s'>Alfonso Dokidis</p>
