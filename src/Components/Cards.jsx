@@ -118,7 +118,7 @@ const Utilitiescard = [
 ]
 const Cards = () => {
     const list = Utilitiescard.map((Utilitiescard) => (
-        <Col xl={4} lg={4} md={6} sm={6} className='mt-3 pt-3 pt-xl-0 position-relative'>
+        <Col xl={4} lg={4} md={6} sm={6} className='mt-3 pt-3 pt-xl-0 position-relative '>
             <Card className='Utilitiescard'>
                 <div className='text-center pt-4'>
                     <span>{Utilitiescard.svg}</span>
@@ -128,8 +128,8 @@ const Cards = () => {
                     <p className='ff-Montserrat fw-normal fs-xs lh-160 white text-center pt-1 max-w-35 0'>{Utilitiescard.para}</p>
                 </Card.Body>
             </Card >
-            <div className='card-elipse'></div>
-            <div className='card-topellipse'></div>
+            <div className='card-elipse d-none d-lg-block'></div>
+            <div className='card-topellipse d-none d-lg-block'></div>
         </Col >
     ))
     return (

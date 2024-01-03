@@ -6,7 +6,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 const Section4 = () => {
     const [count, setCount] = useState(1);
     const decrement = () => {
-        if (count >= 1) {
+        if (count >= 2) {
             setCount(count - 1);
         }
     }
